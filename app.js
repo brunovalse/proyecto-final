@@ -1,6 +1,15 @@
 let precioRevistas = 50
 let precioLibros = 200
 
+
+
+
+
+
+
+
+
+
 const revistasStock = [' Olé', ' El grafico', ' Gente', ' Billboard', ' Forbes']
 
 alert('las revistas que poseemos son:' + revistasStock + ' todas al mismo valor')

@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Revisteria</h1>
-
-        <nav>
-            <ul>
-                <li>Revistas</li>
-                <li>Diarios</li>
-                <li>Libros</li>
-                <li>Comics</li>
-                <a href="formulario.html">Formulario</a>
-            </ul>
+        <nav class="div-nav">
+            <div class="div-imagen-logo">
+                <img class="imagen-logo" src="imagenes/pngwing.com.png" alt="logo revisteria">
+            </div>
+            <div class="div-link">
+                <ul class="div-link-list">
+                    <a class="link-header" href="revistas.html">Revistas</a>
+                    <a class="link-header" href="libros.html">Libros</a>
+                    <a class="link-header" href="formulario.html">Formulario</a>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -26,6 +30,27 @@
             maxime in fugit obcaecati at doloremque repellat facilis nobis sunt? Dolores mollitia 
             officia obcaecati quas nesciunt.</p>
     </section>
+
+    <div class="div-carrousel">
+        <div class="carrousel" id="carrousel">
+            <div class="carrousel-div">
+                <img src="imagenes/billboard.jpg" alt="revista" class="img-carrousel">
+            </div>
+            <div class="carrousel-div">
+                <img src="imagenes/elgrafico.jpg" alt="revista" class="img-carrousel">
+            </div>
+            <div class="carrousel-div">
+                <img src="imagenes/forbes.jpg" alt="revista" class="img-carrousel">
+            </div>
+            <div class="carrousel-div">
+                <img src="imagenes/gente.jpg" alt="revista" class="img-carrousel"   >
+            </div>
+        </div>
+        <div class="carrousel-btn carrousel-btn--right">&#60;</div>
+        <div class="carrousel-btn carrousel-btn--left">&#62;</div>
+    </div>
+
+
 
     <footer>
         <img src="imagenes/pngwing.com.png" alt="Logo revisteria">

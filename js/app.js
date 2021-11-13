@@ -1,3 +1,36 @@
+'use strict '
+
+const grande = document.querySelector('.grande')
+const punto = document.querySelectorAll('.punto')
+
+punto.forEach( (cadaPunto , i )=> {
+    punto(i).addEventListener('click', ()=>{
+
+        let posicion = i
+        let operacion = posicion * -50
+        
+        grande.style.transform = `translateX(${ operacion }%)`
+
+        punto.forEach( (cadaPunto, i) => {
+            punto(i).classlist.remove('activo')
+
+        })
+        punto[i].classList.add('activo')
+    })
+
+} )
+
+
+
+
+
+
+
+
+
+
+
+/*
 let precioRevistas = 50
 let precioLibros = 200
 
@@ -59,4 +92,4 @@ suma()
 
 alert("Muchas gracias por realizar su pedido")
 
-
+*/

@@ -1,0 +1,100 @@
+
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/*          header             */
+
+.imagen-logo{
+    height: 14rem;
+    width: 15rem;
+    margin-left: 43%;
+}
+.div-link-list {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.link-header{
+    margin-left: 2rem;
+    text-decoration: none;
+    color: rgb(36, 36, 250);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+
+
+/*          header             */
+/*          carrusel           */
+
+.div-carrousel{
+    width: 90%;
+    max-width: 90px;
+}
+.carrousel{
+    display: flex;
+    height: 400px;
+    width: 400%;
+}
+.carrousel-div{
+    width: 100%;
+}
+.img-carrousel{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.carrousel-btn{}
+.carrousel-btn:hover{}
+.carrousel-btn--right{}
+.carrousel-btn--left{}
+
+
+/*          carrusel           */
+/*          revistas           */
+.section-revistas{
+    background-color:rgb(240, 243, 243) ;
+}
+
+.div-revistas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    
+}
+    
+
+.div-ole , .div-billboard , .div-elgrafico, .div-forbes , .div-gente , .div-muyinteresante {
+    background-color:rgb(243, 247, 247);
+    padding: 2rem;
+    box-shadow: 0 0 2px rgb(0 0 0 / 10%);
+    
+}
+.div-ole:hover , .div-billboard:hover  , .div-elgrafico:hover , .div-forbes:hover  , .div-gente:hover  , .div-muyinteresante:hover{
+    filter: brightness(0.9) drop-shadow(1px 1px 20px black);
+
+}
+.div-elementos {
+   
+    display: grid;
+    grid-template-columns: 12rem ;
+    grid-template-rows: 1rem 1rem 1rem;
+    
+}
+.select {
+    width: 2rem;
+    margin-top: 1rem;
+}
+.button {
+    width: 5rem;
+    margin-left: 7rem;
+    
+}
+
+/*          revistas           */

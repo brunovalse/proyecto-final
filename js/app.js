@@ -1,24 +1,47 @@
-'use strict '
 
-const grande = document.querySelector('.grande')
-const punto = document.querySelectorAll('.punto')
+const slider = document.querySelector("#slider");
+let sliderSection = document.querySelectorAll(".slider__section");
+let sliderSectionLast = sliderSection[sliderSection.length -1];
 
-punto.forEach( (cadaPunto , i )=> {
-    punto(i).addEventListener('click', ()=>{
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
-        let posicion = i
-        let operacion = posicion * -50
-        
-        grande.style.transform = `translateX(${ operacion }%)`
+slider.insertAdjacentElement('afterbegin', sliderSectionLast);
 
-        punto.forEach( (cadaPunto, i) => {
-            punto(i).classlist.remove('activo')
+function Next() {
+  let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+  slider.style.marginLeft = "-200%";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function(){
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
 
-        })
-        punto[i].classList.add('activo')
-    })
+function Prev() {
+  let sliderSection = document.querySelectorAll(".slider__section");
+  let sliderSectionLast = sliderSection[sliderSection.length -1];
+  slider.style.marginLeft = "0";
+  slider.style.transition = "all 0.5s";
+  setTimeout(function(){
+    slider.style.transition = "none";
+    slider.insertAdjacentElement('afterbegin', sliderSectionLast);
+    slider.style.marginLeft = "-100%";
+  }, 500);
+}
 
-} )
+btnRight.addEventListener('click', function(){
+  Next();
+});
+
+btnLeft.addEventListener('click', function(){
+  Prev();
+});
+
+setInterval(function(){
+  Next();
+}, 5000);
 
 
 
@@ -26,10 +49,33 @@ punto.forEach( (cadaPunto , i )=> {
 
 
 
+/*
+const carrousel = document.querySelector("#carrousel");
+let sliderSection = document.querySelectorAll(".carrousel__div");
+let sliderSectionLast = sliderSection[sliderSection.length -1]
 
+const btnLeft = document.querySelector("#btn-left");
+const btnRight = document.querySelector("#btn-right");
 
+slider.insertAdjacentElement('afterbegin', sliderSectionLast)
 
+function derecha() {
 
+    let sliderSectionFirst = document.querySelectorAll(".carrousel__div")[0];
+    carrousel.style.marginLeft="-200%";
+    carrousel.style.transition = "all 0.5s";
+    setTimeout(function () {
+        carrousel  .style.transition = "none"
+        carrousel.insertAdjacentElement('beforeend', sliderSectionFirst)     
+        carrousel.style.marginLeft="-100%";
+   
+    }, 500);
+}
+btnRight.addEventListener('click', function () {
+    derecha
+    
+})
+*/
 /*
 let precioRevistas = 50
 let precioLibros = 200

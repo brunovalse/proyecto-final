@@ -99,7 +99,7 @@ console.log('las revistas que poseemos son:' + revistasStock + ' todas al mismo 
 console.log('<--------------------->')
 
 
-const librosStock = [' El Señor De Los Anillos', ' Harri Potter', ' Instinto', ' La Ciencia de la Matematica', ' Akasha']
+const librosStock = [' El Señor De Los Anillos', ' Harry Potter', ' Instinto', ' La Ciencia de la Matematica', ' Akasha']
 
 alert('los libros que poseemos son:' + librosStock + ' todos al mismo valor')
  

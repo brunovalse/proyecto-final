@@ -80,26 +80,25 @@ $('#btn').click(function(){
     console.log('Haz hecho click')
     
     }
-    )
-/*const div1 = document.getElementById('div1')
-        const newDiv = document.createElement('div')
-        newDiv.textContent = 'La revista ' + nombre + ' ya esta siendo revisada'
-    
-        div1.appendChild(newDiv)
-        console.log(newDiv)
-        
-        revistaStorage.push(event);
-        let nombreJSON = JSON.stringify(nombre);
-        localStorage.setItem("inputNombre", nombreJSON );
-
-        revistaStorage.push(event);
-        let paginasJSON = JSON.stringify(paginas);
-        localStorage.setItem("inputPaginas", paginasJSON );
-
-        revistaStorage.push(event);
-        let añoJSON = JSON.stringify(año);
-        localStorage.setItem("inputAño", añoJSON );
-
-*/
+    );
 
 
+
+    $(document).ready(function () {
+        $('#terminos').click(function (e) {
+            e.preventDefault();
+            $.get("terminos.txt", function (data, textStatus, jqXHR ) {
+                
+                $('#div-terminos').prepend(`
+                
+                <div> ${data}
+                
+                
+                
+                `
+                )
+
+            })
+            
+        })
+    })

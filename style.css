@@ -8,7 +8,7 @@
 /*          header             */
 
 .div-nav{
-    background-color: rgb(255, 250, 244);
+    background-color: #f5f3f3;
 }
 .hr-header{
     margin-top: 2rem;
@@ -19,8 +19,8 @@
     background-color: gray;
 }
 .imagen-logo{
-    height: 14rem;
-    width: 15rem;
+    height: 9rem;
+    width: 10rem;
     margin-left: 43%;
 }
 .div-link-list {
@@ -32,13 +32,34 @@
 .link-header{
     margin-left: 2rem;
     text-decoration: none;
-    color: rgb(36, 36, 250);
+    color: #337ab7;
     font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+.icon-nav{
+    margin-left: 80%;
+    position: relative;
+    top: 5rem;
+    display: flex;
 
+}
+
+.img-usuario{
+    width: 2rem;
+    height: 2rem;
+
+}
+
+
+.img-cart
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.5rem;
+    
+}
 
 
 /*          header             */
@@ -52,13 +73,16 @@
     overflow: hidden;
     box-shadow: 0 0 0 2px rgb(255, 243, 243),
                 0 10px 35px;
-    position: relative;            
+    position: relative;  
+    margin-top: 3rem; 
+            
 }
 .slider{
     display: flex;
     height: 400px;
     width: 400%;
     margin-left: -100%;
+    
 }
 .slider__section{
     width: 100%;
@@ -131,6 +155,126 @@
 }
 
 /*          slider2           */
+/*          registro           */
+
+body {
+    background-color: rgb(244, 247, 247);
+    background-size: cover;
+    background-attachment: fixed;
+    }
+
+.contenedor-form {
+    background: rgba(199, 198, 198, 0.7);
+    max-width: 500px;
+    width: 100%;
+    margin: 48px auto;
+    border-radius: 5px;
+    color: rgb(90, 87, 87);
+    position: relative;
+    /*padding: 40px;*/
+}
+
+.contenedor-form .toggle {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;
+    border-top: 2px solid #ff851b;
+    border-bottom: 2px solid #ff851b;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form .toggle:hover {
+    border-top: 2px solid #0075d9;
+    border-bottom: 2px solid #0075d9;
+}
+
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+}
+
+.contenedor-form h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="email"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 0 0 20px 0;
+    background: rgba(0,0,0,.5);
+    color: rgb(14, 11, 11);
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ff851b;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:normal;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="email"]:focus {
+    border-bottom: 4px solid #0075d9;
+}
+
+.contenedor-form input[type="submit"] {
+    background: #FF851B;
+    color: rgb(7, 6, 6);
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+input::placeholder { color: black;}
+
+.contenedor-form input[type="submit"]:hover {
+    background: rgba(56, 161, 253, 0.7);
+}
+
+.contenedor-form .reset-password {
+    background: rgba(0, 117, 217, .7);
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.contenedor-form .reset-password a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form .formulario {
+    display: none;
+    padding: 40px;
+}
+
+.contenedor-form .formulario:nth-child(2) {
+    display: block;
+}
+
+
+/*          registro           */
 /*          form               */
 
 .div-form{

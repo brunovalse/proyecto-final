@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
         <nav class="div-nav">
             <div class="icon-nav">
@@ -31,46 +30,40 @@
             </div>
         </nav>
     </header>
-
-
-    <div>
-        <h2>Sugerecias</h2>
-        <p>agradeceríamos que en este formulario se agreguen las revistas que no tengamos</p>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#">
+                <input type="text" placeholder="Usuario" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+        
+        <div class="formulario" id>
+            <h2>Crea tu Cuenta</h2>
+            <form action="#" id="form-usuario">
+                <input  type="text" placeholder="Usuario" id="usuario" required>
+                
+                <input type="password" placeholder="Contraseña" id="password" required>
+                
+                <input type="email" placeholder="Correo Electronico" id="email" required>
+                
+                <input type="text" placeholder="Teléfono" id="telefono" required>
+                
+                <input type="submit" value="Registrarse" id="btn-usuario">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi Contraseña?</a>
+        </div>
     </div>
-
-    <div class="div-form">
-        <div class="form">
-            <form id="form-revistas">
-
-                <label for="input-nombre-revista">Nombre revista</label>
-                <input id="input-nombre-revista" name="nombre-revista" autocomplete="off" type="text">
-                <br>
-                <br>
-                <label for="input-pagina-revista">Cantidad de paginas</label>
-                <input id="input-pagina-revista" name="pagina-revista" autocomplete="off" type="number">
-                <br>
-                <br>
-                <label for="input-año-revista">Año de salida</label>
-                <input id="input-año-revista" name="año-revista" autocomplete="off" type="number">
-                <br>
-                <br>
-                <div>
-                    <button id="btn">agregar</button>
-                </div>
-
-
-                <div id="div1"></div>
-            </div>
-        </div>
-        </form> 
-
-        <div>
-            <h4>Terminos y condiciones</h4>
-            <button id="terminos">Leer</button>
-            <div id="div-terminos"></div>
-        </div>
-
-
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
     <footer class="footer" >
             
         <div class="footer__div">
@@ -110,10 +103,7 @@
         <a id="contactos"></a>
     </footer>
 
-
-    
-
-    <script src="js/formulario.js"></script>
-    
+    <script src="js/registro.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </body>
 </html>

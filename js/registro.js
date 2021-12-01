@@ -14,15 +14,12 @@ const usuario = $('#usuario')
 const password = $('#password')
 const email = $('#email')
 const telefono = $('#telefono')
-const btnUsuario = $('#btn-usuario')
 
 const listaUsuarios = [ 
-    {nombreLocal:'brunovalse',passwordLocal:'123456',emailLocal:'brunovalse@gmail.com', telefonoLocal:'1122334455' }
  ];
 
 $(formUsuarios).on('submit',(event) =>{
 
-    event.preventDefault();
 
     const nombreUsuario = $(usuario).val();
 
@@ -42,16 +39,17 @@ $(formUsuarios).on('submit',(event) =>{
 
 
 
-    if(localStorage.getItem(nombreLocal) === nombreUsuario ) {
+    if(localStorage.hasOwnProperty("nombreUsuario") ) {
+
         alert('nombre')
     }
-    else if(localStorage.getItem(passwordLocal) === passwordUsuario ) {
+    else if(localStorage.hasOwnProperty("passwordUsuario" )) {
         alert('password')
     }
-    else if(localStorage.getItem(emailLocal) === emailUsuario ) {
+    else if(localStorage.hasOwnProperty("emailUsuario" )) {
         alert('email')
     }
-    else if(localStorage.getItem(telefonoLocal) ===telefonoUsuario ) {
+    else if(localStorage.hasOwnProperty("telefonoUsuario" )) {
         alert('telefono')
     }
 
@@ -60,7 +58,7 @@ $(formUsuarios).on('submit',(event) =>{
         
        
         listaUsuarios.push({
-            nombreLocal, passwordLocal, emailLocal, telefonoLocal
+            nombreUsuario, passwordUsuario, emailUsuario, telefonoUsuario
 
 
         })

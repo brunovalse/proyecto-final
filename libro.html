@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title>
+    <title>Libros</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="imagenes/icon.jpg">
     
@@ -46,8 +46,8 @@
                   </tfoot>
                 </table>
                 <div>
-                    <a class="comprar-pago" target="_blank" href="https://www.mercadopago.com.ar">Pagar</a>
-                  </div>
+                  <a class="comprar-pago" target="_blank" href="https://www.mercadopago.com.ar">Pagar</a>
+                </div>
               </div>
             </div>
 
@@ -61,75 +61,19 @@
               <ul class="div-link-list">
                   <a class="link-header" href="index.html">Inicio</a>
                   <a class="link-header" href="revistas.html">Revistas</a>
-                  <a class="link-header" href="libro.html">Libros</a> 
                   <a class="link-header" href="comics.html">Comics</a>                  
                   <a class="link-header" href="formulario.html">Formulario</a>
               </ul>
           </div>
-          
+          <div class="separador-header">
+              <span class="separador-span">Aqui se encuentran</span>
+              <img src="imagenes/bookday.png" class="separador-book" alt="booksday">
+          </div>
       </nav>
   </header>
   
-  <div class="container-slider">
-    <div class="slider" id="slider">
-      <div class="slider__section">
-        <img src="imagenes/libreria.jpg" alt="" class="slider__img">
-
-      </div>
-      <div class="slider__section">
-        <img src="imagenes/books.jpg" alt="" class="slider__img">
-        
-      </div>
-      <div class="slider__section">
-        <img src="imagenes/comic.jpg" alt="" class="slider__img">
-        
-      </div>
-      <div class="slider__section">
-        <img src="imagenes/magazines.jpg" alt="" class="slider__img">
-        
-      </div>
-    </div>
-    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-  </div>
-
-  <div>
-      <h2></h2>
-  </div>
-  
-<div >
-    <div>
-        <h2 class="title-img-inicio">Comics</h2>
-        <div class="div-inicio-img">
-            <a class="inicio-img" href="comics.html"><img class="img-inicio" src="imagenes/batman.jpg" alt=""></a>
-            <a class="nicio-img" href="comics.html"><img  class="img-inicio" src="imagenes/flash.jpg" alt=""></a>
-            <a class="inicio-img" href="comics.html"><img  class="img-inicio" src="imagenes/guardianes.jpg" alt=""></a>
-        </div>
-    </div>
-    <div>
-        <h2 class="title-img-inicio">Libros</h2>
-        <div class="div-inicio-img">
-            <a class="inicio-img" href="libro.html"><img  class="img-inicio" src="imagenes/elseñordelosanillos.jpg" alt=""></a>
-            <a class="nicio-img" href="libro.html"><img  class="img-inicio" src="imagenes/harrypotter.jpg" alt=""></a>
-            <a class="inicio-img" href="libro.html"><img  class="img-inicio" src="imagenes/dune.jpg" alt=""></a>
-        </div>
-    </div>
-    <div>
-        <h2 href="revistas.html" class="title-img-inicio">Revistas</h2>
-        <div class="div-inicio-img">
-            <a class="inicio-img" href="revistas.html"><img  class="img-inicio" src="imagenes/ole.jpg" alt=""></a>
-            <a class="nicio-img" href="revistas.html"><img   class="img-inicio" src="imagenes/elgrafico.jpg" alt=""></a>
-            <a class="inicio-img" href="revistas.html"><img class="img-inicio" src="imagenes/gente.jpg" alt=""></a>
-        </div>
-    </div>
-</div>
-
-
-  
-  <div class="teplate-index">
   <div class="div-template" id="cards"></div>
-</div>
-    <footer id="footer-ind" class="footer" >
+    <footer class="footer" >
             
       <div class="footer__div">
           <div>
@@ -207,7 +151,7 @@
 
     <template id="template-card"> 
         <div class="div-revista">
-          <div  class="div-rlc1">
+          <div  class="div-rlc">
             <img src="" class=".img-comics" alt="">
             <div class="card-body">
               <img src="" alt="">
@@ -223,7 +167,7 @@
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/ventana.js"></script>
-  <script src="js/slider.js"></script>
+
     <script src="app.js"></script>
   </body>
 </html>
